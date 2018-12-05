@@ -38,6 +38,15 @@ func LoadFileAsIntegerArray(filename string) []int {
 	return ints
 }
 
+// ConvertStringToRuneArray converts a string to a rune array
+func ConvertStringToRuneArray(str string) []rune {
+	runeArray := []rune{}
+	for _, r := range str {
+		runeArray = append(runeArray, r)
+	}
+	return runeArray
+}
+
 func handleError(err error) {
 	if err != nil {
 		log.Fatal(err)
